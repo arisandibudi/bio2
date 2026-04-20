@@ -1,532 +1,728 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>MONOLITH.AI | Budi Arisandi Portfolio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "tertiary-fixed-dim": "#ffb59d",
-                    "on-tertiary-container": "#fff6f4",
-                    "on-primary": "#002b75",
-                    "tertiary": "#ffb59d",
-                    "on-error": "#690005",
-                    "secondary-container": "#284386",
-                    "primary-fixed-dim": "#b3c5ff",
-                    "primary": "#b3c5ff",
-                    "background": "#111417",
-                    "tertiary-fixed": "#ffdbd0",
-                    "surface-container-lowest": "#0c0e12",
-                    "outline-variant": "#424656",
-                    "on-primary-container": "#f8f7ff",
-                    "surface-tint": "#b3c5ff",
-                    "surface-container-high": "#282a2e",
-                    "inverse-on-surface": "#2e3134",
-                    "secondary-fixed-dim": "#b3c5ff",
-                    "surface-container": "#1d2023",
-                    "on-secondary": "#0a2c6e",
-                    "outline": "#8c90a1",
-                    "on-tertiary-fixed-variant": "#832600",
-                    "on-surface": "#e1e2e7",
-                    "surface-variant": "#323539",
-                    "surface-bright": "#37393d",
-                    "on-secondary-container": "#9ab3fd",
-                    "on-primary-fixed": "#001849",
-                    "surface-container-highest": "#323539",
-                    "on-secondary-fixed": "#001849",
-                    "inverse-surface": "#e1e2e7",
-                    "surface-container-low": "#191c1f",
-                    "on-primary-fixed-variant": "#003fa4",
-                    "tertiary-container": "#cc4204",
-                    "on-error-container": "#ffdad6",
-                    "primary-container": "#0066ff",
-                    "on-secondary-fixed-variant": "#284386",
-                    "secondary": "#b3c5ff",
-                    "on-surface-variant": "#c2c6d8",
-                    "on-background": "#e1e2e7",
-                    "error": "#ffb4ab",
-                    "primary-fixed": "#dae1ff",
-                    "surface-dim": "#111417",
-                    "surface": "#111417",
-                    "error-container": "#93000a",
-                    "inverse-primary": "#0054d6",
-                    "on-tertiary-fixed": "#390c00",
-                    "on-tertiary": "#5d1900",
-                    "secondary-fixed": "#dae1ff"
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>MONOLITH.AI | Budi Arisandi Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb59d",
+                        "on-tertiary-container": "#fff6f4",
+                        "on-primary": "#002b75",
+                        "tertiary": "#ffb59d",
+                        "on-error": "#690005",
+                        "secondary-container": "#284386",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "primary": "#b3c5ff",
+                        "background": "#111417",
+                        "tertiary-fixed": "#ffdbd0",
+                        "surface-container-lowest": "#0c0e12",
+                        "outline-variant": "#424656",
+                        "on-primary-container": "#f8f7ff",
+                        "surface-tint": "#b3c5ff",
+                        "surface-container-high": "#282a2e",
+                        "inverse-on-surface": "#2e3134",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "surface-container": "#1d2023",
+                        "on-secondary": "#0a2c6e",
+                        "outline": "#8c90a1",
+                        "on-tertiary-fixed-variant": "#832600",
+                        "on-surface": "#e1e2e7",
+                        "surface-variant": "#323539",
+                        "surface-bright": "#37393d",
+                        "on-secondary-container": "#9ab3fd",
+                        "on-primary-fixed": "#001849",
+                        "surface-container-highest": "#323539",
+                        "on-secondary-fixed": "#001849",
+                        "inverse-surface": "#e1e2e7",
+                        "surface-container-low": "#191c1f",
+                        "on-primary-fixed-variant": "#003fa4",
+                        "tertiary-container": "#cc4204",
+                        "on-error-container": "#ffdad6",
+                        "primary-container": "#0066ff",
+                        "on-secondary-fixed-variant": "#284386",
+                        "secondary": "#b3c5ff",
+                        "on-surface-variant": "#c2c6d8",
+                        "on-background": "#e1e2e7",
+                        "error": "#ffb4ab",
+                        "primary-fixed": "#dae1ff",
+                        "surface-dim": "#111417",
+                        "surface": "#111417",
+                        "error-container": "#93000a",
+                        "inverse-primary": "#0054d6",
+                        "on-tertiary-fixed": "#390c00",
+                        "on-tertiary": "#5d1900",
+                        "secondary-fixed": "#dae1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
             },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "fontFamily": {
-                    "headline": ["Space Grotesk"],
-                    "body": ["Manrope"],
-                    "label": ["Inter"]
-            }
-          },
-        },
-      }
+        }
     </script>
-<style>
-        body { background-color: #111417; color: #e1e2e7; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .tonal-transition { transition: background-color 0.3s ease; }
-        .glass-panel { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
-        .hero-gradient { background: radial-gradient(circle at top right, rgba(0, 102, 255, 0.08), transparent); }
+    <style>
+        body {
+            background-color: #111417;
+            color: #e1e2e7;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .tonal-transition {
+            transition: background-color 0.3s ease;
+        }
+
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(0, 102, 255, 0.08), transparent);
+        }
     </style>
 </head>
+
 <body class="font-body selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar -->
-<header class="bg-[#111417]/70 backdrop-blur-xl font-['Space_Grotesk'] tracking-tighter docked full-width top-0 sticky z-50 border-b border-white/5 shadow-[0_0_40px_rgba(0,102,255,0.08)]">
-<div class="flex justify-between items-center w-full px-8 py-4 max-w-[1440px] mx-auto">
-<div class="text-xl font-bold tracking-tighter text-slate-100 uppercase">MONOLITH.AI</div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-blue-500 border-b-2 border-blue-500 pb-1" href="#portfolio">Portfolio</a>
-<a class="text-slate-400 hover:text-slate-100 transition-colors" href="#detailed-experience">Experience</a>
-<a class="text-slate-400 hover:text-slate-100 transition-colors" href="#projects">Projects</a>
-</nav>
-</div>
-</header>
-<main class="relative hero-gradient min-h-screen">
-<!-- Section 1: Executive Hero -->
-<section class="pt-24 pb-32 px-8 max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center" id="portfolio">
-<div class="lg:col-span-7 space-y-8">
-<div class="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/20">
-<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
-<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Available for Strategic Collaboration</span>
-</div>
-<h1 class="font-headline text-7xl lg:text-8xl font-bold tracking-tighter leading-none text-on-surface">
-                    Budi <br/><span class="text-primary-container">Arisandi</span>
-</h1>
-<p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed">
-                    AI Systems Architect &amp; Executive Technologist. Pioneering the intersection of neural networks and enterprise scalability through high-performance data monoliths.
+    <!-- TopNavBar -->
+    <header
+        class="bg-[#111417]/70 backdrop-blur-xl font-['Space_Grotesk'] tracking-tighter docked full-width top-0 sticky z-50 border-b border-white/5 shadow-[0_0_40px_rgba(0,102,255,0.08)]">
+        <div class="flex justify-between items-center w-full px-8 py-4 max-w-[1440px] mx-auto">
+            <div class="text-xl font-bold tracking-tighter text-slate-100 uppercase">MONOLITH.AI</div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-blue-500 border-b-2 border-blue-500 pb-1" href="#portfolio">Portfolio</a>
+                <a class="text-slate-400 hover:text-slate-100 transition-colors"
+                    href="#detailed-experience">Experience</a>
+                <a class="text-slate-400 hover:text-slate-100 transition-colors" href="#projects">Projects</a>
+            </nav>
+        </div>
+    </header>
+    <main class="relative hero-gradient min-h-screen">
+        <!-- Section 1: Executive Hero -->
+        <section class="pt-24 pb-32 px-8 max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+            id="portfolio">
+            <div class="lg:col-span-7 space-y-8">
+                <div
+                    class="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/20">
+                    <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+                    <span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Available for
+                        Strategic Collaboration</span>
+                </div>
+                <h1 class="font-headline text-7xl lg:text-8xl font-bold tracking-tighter leading-none text-on-surface">
+                    Budi <br /><span class="text-primary-container">Arisandi</span>
+                </h1>
+                <p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    AI Systems Architect &amp; Data Management Professional. Pioneering the integration of AI and data
+                    management for enterprise scalability.
                 </p>
-<div class="flex items-center gap-6 pt-4">
-<div class="flex -space-x-3">
-<div class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Corporate headshot of an executive with professional lighting" src="https://lh3.googleusercontent.com/aida/ADBb0ui0og5ZDO9ZpFco95H_QwjdbzlzaFL4LsJP0x9OOnQNaYVQ3dPVS0x7FGfonfBhtwGZ3bjHJ2J3V249EcLriX9KcVT7JJUx6CeiCr31SkqT5pZkzrLcTPMh5IKDjDReNqTo0SA00ITVjTWawZ37peYU2hNb6QmWBfYAQXEDYKdvLSvPX_jy7jRFyxHltq8wuZXXKy7msFPXYLFJQyNYtb4uD0WhISIdtF-Rh0qnwKHDq80Fj0lQpE_NxS0pvXWvzRcAtAdxsts9lQ"/>
-</div>
-<div class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container flex items-center justify-center">
-<span class="text-[10px] font-bold">+50</span>
-</div>
-</div>
-</div><div class="flex flex-col gap-1 mt-4">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-sm text-primary-container">mail</span>
-<a class="text-sm font-body hover:text-primary transition-colors" href="mailto:arisandi.budi@gmail.com">arisandi.budi@gmail.com</a>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-sm text-primary-container">call</span>
-<a class="text-sm font-body hover:text-primary transition-colors" href="tel:+6281808187257">+6281808187257</a>
-</div>
-</div>
-</div>
-<div class="lg:col-span-5 relative">
-<div class="aspect-square bg-surface-container-low rounded-2xl relative overflow-hidden group">
-<img class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Abstract neural network visualization with blue light trails on a dark obsidian background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCyO9teqKuF8j-eR_UYFk0OWqe4U6IYj1PwgCj0Gn6q33pco0zLx_I7GqkJIdWR5QB4x-8P1D_WUT6NAICTHAlPV8BYwObmvvG0gpPAJ6CqBTt3zu4MnuigtiDL2N1bMkODQkBU_6GKoMwGYSM4t6WTsfuBjiZnBbktreJv8CZDrW_c9sGddHwaoqXRdMt-s5IQFqAtEsudmQk5nN9B9buo68bXiRYy2iCG-lz8h04r5GNA8gzKcm0iYYwaXMHZNjj0NeDctJpjdA"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
-<div class="absolute bottom-8 left-8 right-8 p-6 glass-panel bg-white/5 rounded-xl border border-white/10">
-<div class="flex justify-between items-end">
-<div>
-<p class="text-xs font-label text-primary uppercase tracking-widest mb-1">Current Focus</p>
-<p class="text-lg font-headline font-medium">Neural Architecture</p>
-</div>
-<span class="text-3xl font-headline font-black text-white/20">01</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Section: Detailed Professional Experience (Primary Experience Showcase) -->
-<section class="py-24 bg-surface-dim border-y border-white/5" id="detailed-experience">
-<div class="max-w-[1440px] mx-auto px-8">
-<div class="mb-20">
-<h2 class="font-headline text-5xl font-bold tracking-tighter mb-4 text-on-surface">Professional Dossier</h2>
-<p class="text-on-surface-variant font-body text-lg">Granular breakdown of strategic mandates and technical execution.</p>
-</div>
-<div class="space-y-12">
-<!-- Alpha System Technology -->
-<div class="group relative grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 bg-surface-container rounded-2xl border border-outline-variant/10 hover:border-primary-container/30 transition-all">
-<div class="lg:col-span-3">
-<p class="text-primary font-label text-xs uppercase tracking-widest mb-2">2024 — PRESENT</p>
-<h3 class="text-2xl font-headline font-bold text-on-surface">Alpha System Technology</h3>
-<p class="text-sm text-outline-variant font-medium mt-2">Principal Consultant</p>
-</div>
-<div class="lg:col-span-9">
-<h4 class="text-xl font-headline font-bold text-primary-container mb-4">Project Management &amp; AI Implementation</h4>
-<ul class="space-y-3">
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
-<p class="text-on-surface-variant text-sm leading-relaxed">Directed project management for next-generation Digital Payment in Lifestyle Ecosystem with integrated AI capabilities.</p>
-</li>
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
-<p class="text-on-surface-variant text-sm leading-relaxed">Architected WhatsApp (WAHA) workflows utilizing N8N for complex business process automation.</p>
-</li>
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
-<p class="text-on-surface-variant text-sm leading-relaxed">Developed full-stack mobile applications using Node.js, Google AI Antigrafity, and Supabase.</p>
-</li>
-</ul>
-</div>
-</div>
-<!-- PT Mitra Transaksi Indonesia -->
-<div class="group relative grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 bg-surface-container rounded-2xl border border-outline-variant/10 hover:border-primary-container/30 transition-all">
-<div class="lg:col-span-3">
-<p class="text-primary font-label text-xs uppercase tracking-widest mb-2">2021 — 2024</p>
-<h3 class="text-2xl font-headline font-bold text-on-surface">PT Mitra Transaksi Indonesia</h3>
-<p class="text-sm text-outline-variant font-medium mt-2">Dept. Head Data Management</p>
-</div>
-<div class="lg:col-span-9">
-<h4 class="text-xl font-headline font-bold text-primary-container mb-4">Data Infrastructure &amp; Innovation</h4>
-<ul class="space-y-3">
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
-<p class="text-on-surface-variant text-sm leading-relaxed">Engineered high-performance Data Warehouse (DWH) with ETL/ELT models for near real-time processing.</p>
-</li>
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
-<p class="text-on-surface-variant text-sm leading-relaxed">Spearheaded the design of scalable data infrastructure to accelerate analytical throughput and reporting accuracy.</p>
-</li>
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
-<p class="text-on-surface-variant text-sm leading-relaxed">Formulated strategic work plans and budgets for department-wide policy implementation and performance monitoring.</p>
-</li>
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
-<p class="text-on-surface-variant text-sm leading-relaxed">Established operational standards for complex business system handling and rigorous data archiving protocols.</p>
-</li>
-</ul>
-</div>
-</div>
-<!-- PT Bank Mega tbk -->
-<div class="group relative grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 bg-surface-container rounded-2xl border border-outline-variant/10 hover:border-primary-container/30 transition-all">
-<div class="lg:col-span-3">
-<p class="text-primary font-label text-xs uppercase tracking-widest mb-2">2015 — 2021</p>
-<h3 class="text-2xl font-headline font-bold text-on-surface">PT Bank Mega tbk</h3>
-<p class="text-sm text-outline-variant font-medium mt-2">MIS Department Head</p>
-</div>
-<div class="lg:col-span-9">
-<h4 class="text-xl font-headline font-bold text-primary-container mb-4">Enterprise Data Governance &amp; Reporting</h4>
-<ul class="space-y-3">
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
-<p class="text-on-surface-variant text-sm leading-relaxed">Orchestrated the smooth operation of the MIS department, ensuring rigorous data governance and regulatory compliance.</p>
-</li>
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
-<p class="text-on-surface-variant text-sm leading-relaxed">Managed end-to-end Data Warehouse operations for critical banking report generation (BI, OJK, and Government).</p>
-</li>
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
-<p class="text-on-surface-variant text-sm leading-relaxed">Collaborated across functional units to identify data requirements and implement foundational collection processes.</p>
-</li>
-</ul>
-</div>
-</div>
-<!-- Previous Experience Summary -->
-<div class="p-8 bg-surface-container-low rounded-2xl border border-white/5">
-<h4 class="font-headline font-bold text-on-surface mb-8">Earlier Strategic Mandates</h4>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-<div>
-<p class="text-[10px] font-label text-primary uppercase tracking-widest mb-2">2010 — 2015</p>
-<h5 class="text-sm font-headline font-bold text-on-surface">IT &amp; OPS EDC Manager</h5>
-<p class="text-xs text-outline-variant mt-1">PT Bank Mega (Makassar)</p>
-<p class="text-xs text-on-surface-variant mt-3 leading-relaxed">Managed regional EDC support, e-Money development for toll gates, and large-scale entertainment complex integrations.</p>
-</div>
-<div>
-<p class="text-[10px] font-label text-primary uppercase tracking-widest mb-2">2004 — 2010</p>
-<h5 class="text-sm font-headline font-bold text-on-surface">App Development Staff</h5>
-<p class="text-xs text-outline-variant mt-1">PT Bank Mega (Jakarta)</p>
-<p class="text-xs text-on-surface-variant mt-3 leading-relaxed">Focused on system analysis, FSD reporting for project management, and SIT/UAT coordination.</p>
-</div>
-<div>
-<p class="text-[10px] font-label text-primary uppercase tracking-widest mb-2">2002 — 2004</p>
-<h5 class="text-sm font-headline font-bold text-on-surface">Systems Analyst</h5>
-<p class="text-xs text-outline-variant mt-1">IT Consultant DMS</p>
-<p class="text-xs text-on-surface-variant mt-3 leading-relaxed">Authored BRDs and business development strategies. Monitored complex process flow developments.</p>
-</div>
-<div>
-<p class="text-[10px] font-label text-primary uppercase tracking-widest mb-2">2000 — 2001</p>
-<h5 class="text-sm font-headline font-bold text-on-surface">System Engineer</h5>
-<p class="text-xs text-outline-variant mt-1">IT Consultant DMS</p>
-<p class="text-xs text-on-surface-variant mt-3 leading-relaxed">Foundational application development and SIT Application protocols.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Section 3: AI & Projects Showcase -->
-<section class="py-24" id="projects">
-<div class="max-w-[1440px] mx-auto px-8">
-<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-<div class="max-w-2xl">
-<h2 class="font-headline text-5xl font-bold tracking-tighter mb-6 text-on-surface">Architectural Ventures</h2>
-<p class="text-on-surface-variant font-body text-lg">Case studies on technical precision and systemic evolution.</p>
-</div>
-<div class="flex gap-4">
-<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white/5 transition-all">
-<span class="material-symbols-outlined">chevron_left</span>
-</button>
-<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white/5 transition-all">
-<span class="material-symbols-outlined">chevron_right</span>
-</button>
-</div>
-</div>
-<div class="space-y-32">
-<!-- Project 1: DWH Migration -->
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div>
-<div class="flex items-center gap-4 mb-6">
-<span class="bg-primary-container/10 text-primary-container px-3 py-1 rounded text-xs font-label font-bold tracking-widest uppercase">Infrastructure</span>
-<span class="text-outline-variant text-xs font-label">Project: Alpha-Scale</span>
-</div>
-<h3 class="text-3xl font-headline font-bold mb-6">Data Warehouse Migration</h3>
-<p class="text-on-surface-variant mb-8 leading-relaxed">
-                                Transitioning from fragmented legacy silos to a unified, high-performance DWH. Implemented zero-downtime migration protocols for petabyte-scale financial data.
-                            </p>
-<ul class="space-y-4 mb-8">
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="text-sm font-body">99.99% Data Integrity during transition</span>
-</li>
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="text-sm font-body">75% reduction in query latency</span>
-</li>
-</ul>
-</div>
-<div class="bg-surface-container-high rounded-2xl overflow-hidden border border-outline-variant/20 p-4">
-<img class="w-full h-auto rounded-xl" data-alt="Comprehensive technical architecture diagram showing source data, staging, processing with Kafka and Pentaho, and implementation across various platforms and tools like Tableau." src="https://lh3.googleusercontent.com/aida/ADBb0ujHvI49XZRdgAgRUHsvLu_Dn2Doh2btGk_OSBxJ6guJelpAjoIzzaunaWy-H1Fe-lP7S7VERQgO6fV4Z41LAVbfrUSYxiY4npj6AmNhduTClOcVIo_-LG6uaTNa7N4DO9vL3kK7kt8da-IockkEWv1OcJOi4fjyAdldtQh5_nU8Fehad0frp1TSMZU6_h_cu9_CQDPXjGcp2BWzBp3WGYdbFCfh-1rJMZbvxzK7MReoplFbQG_W3YbkvOe7zxHcJGMUdjxD394_"/>
-</div>
-</div>
-<!-- Project 2: Nixguard AI -->
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div class="lg:order-2">
-<div class="flex items-center gap-4 mb-6">
-<span class="bg-tertiary-container/10 text-tertiary-fixed-dim px-3 py-1 rounded text-xs font-label font-bold tracking-widest uppercase">Artificial Intelligence</span>
-<span class="text-outline-variant text-xs font-label">Project: Nixguard</span>
-</div>
-<h3 class="text-3xl font-headline font-bold mb-6">Nixguard AI Agents</h3>
-<p class="text-on-surface-variant mb-8 leading-relaxed">
-                                Autonomous security agents leveraging LLMs to detect and mitigate zero-day vulnerabilities in real-time. The system orchestrates multiple specialized nodes for threat hunting.
-                            </p>
-<div class="p-6 bg-surface-container-lowest rounded-xl border border-white/5 font-label">
-<p class="text-xs text-primary mb-4 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span> Analysis Log</p>
-<div class="text-[11px] text-on-surface-variant space-y-2 opacity-80">
-<p>&gt; [INFO] INITIALIZING NIXGUARD AGENT NODE_04</p>
-<p>&gt; [WARN] ANOMALY DETECTED IN PORT 443 TRAFFIC</p>
-<p>&gt; [INFO] AGENT DISPATCHING NEURAL FILTER... SUCCESS</p>
-<p>&gt; [RESULT] THREAT NEUTRALIZED. ENTROPY SCORE: 0.002</p>
-</div>
-</div>
-</div>
-<div class="lg:order-1 bg-surface-container-high rounded-2xl overflow-hidden border border-outline-variant/20 p-4">
-<img class="w-full h-auto rounded-xl opacity-90 hover:opacity-100 transition-opacity" data-alt="Detailed technical workflow diagram for Nixguard AI Agents showing node-to-node communication and automated triggers." src="https://lh3.googleusercontent.com/aida/ADBb0ugf6_s9xP31TRfujox8FRwMPjGB74SDk1PVMZriVmCxN8Cug7oENWq-BDvtEf2Ny3_nuiDNpIMqnZ-nEg40kJDl71Fz4_tS1elvrII9-RcjIsN41-V3H8LrZAigsttv643kEN8VVb9-98WZujTv5Kw9d7kHC3aAH518MNzXvo6c3T3pMqhZXij4r8zuGnkBA1zeCFg72sNVrRCW78E3KhcZ0jIqsUfcPhYuqEmMIMq9C3jPLwOpB94L-9ZxyOoeCkuJG_Au7A60Bw"/>
-<div class="mt-6 p-6 bg-surface-container-lowest rounded-xl border border-white/5 font-label">
-<p class="text-xs text-primary mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-[14px]">description</span> Result Example
-    </p>
-<div class="text-[11px] text-on-surface-variant space-y-4 opacity-80 leading-relaxed">
-<p>The system has been analyzed for its reputation and security status. Here are the key findings:</p>
-<ul class="space-y-2">
-<li><span class="text-primary-container font-bold">REPUTATION_STATUS:</span> The domain is generally considered safe and trustworthy.</li>
-<li><span class="text-primary-container font-bold">ANALYSIS_RESULTS:</span> Multiple security engines, including Acronis, Abusix, ADMINUSLabs, and others, categorize the domain as harmless or undetected, with no malicious activity reported.</li>
-<li><span class="text-primary-container font-bold">SSL_CERTIFICATE:</span> Valid until December 22, 2026, issued by Thawte TLS RSA CA G1, indicating secure communication.</li>
-<li><span class="text-primary-container font-bold">DNS_RECORDS:</span> Consistent with standard configurations, including multiple name servers and verification records.</li>
-<li><span class="text-primary-container font-bold">DOMAIN_REGISTRATION:</span> Registered in 1998 (Name.com, Inc). Status: "clientTransferProhibited" (standard active domain protocol).</li>
-<li><span class="text-primary-container font-bold">ADDITIONAL_INFO:</span> Malicious vote count: 0. Popularity ranks within normal architectural ranges.</li>
-</ul>
-</div>
-</div></div>
-</div>
-<!-- Project 3: Digital Payment -->
-<div class="grid grid-cols-1 gap-16">
-<div class="space-y-12 mx-auto">
-<div>
-<div class="flex items-center gap-4 mb-6">
-<span class="bg-secondary-container/10 text-secondary-fixed-dim px-3 py-1 rounded text-xs font-label font-bold tracking-widest uppercase">Ecosystem</span>
-<span class="text-outline-variant text-xs font-label">Project: Lifestyle Pay</span>
-</div>
-<h3 class="text-3xl font-headline font-bold mb-6">Digital Payment in Lifestyle Ecosystem</h3>
-<p class="text-on-surface-variant mb-8 leading-relaxed">
-                                    A holistic integration of fintech within everyday consumer touchpoints—from retail to entertainment. This ecosystem drives high-velocity micro-transactions.
+                <div class="flex items-center gap-6 pt-4">
+                    <div class="flex -space-x-3">
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container overflow-hidden">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Corporate headshot of an executive with professional lighting"
+                                src="https://lh3.googleusercontent.com/aida/ADBb0ui0og5ZDO9ZpFco95H_QwjdbzlzaFL4LsJP0x9OOnQNaYVQ3dPVS0x7FGfonfBhtwGZ3bjHJ2J3V249EcLriX9KcVT7JJUx6CeiCr31SkqT5pZkzrLcTPMh5IKDjDReNqTo0SA00ITVjTWawZ37peYU2hNb6QmWBfYAQXEDYKdvLSvPX_jy7jRFyxHltq8wuZXXKy7msFPXYLFJQyNYtb4uD0WhISIdtF-Rh0qnwKHDq80Fj0lQpE_NxS0pvXWvzRcAtAdxsts9lQ" />
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container flex items-center justify-center">
+                            <span class="text-[10px] font-bold">+50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1 mt-4">
+                    <div class="flex items-center gap-2 text-on-surface-variant">
+                        <span class="material-symbols-outlined text-sm text-primary-container">mail</span>
+                        <a class="text-sm font-body hover:text-primary transition-colors"
+                            href="mailto:arisandi.budi@gmail.com">arisandi.budi@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-2 text-on-surface-variant">
+                        <span class="material-symbols-outlined text-sm text-primary-container">call</span>
+                        <a class="text-sm font-body hover:text-primary transition-colors"
+                            href="tel:+6281808187257">+6281808187257</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-5 relative">
+                <div class="aspect-square bg-surface-container-low rounded-2xl relative overflow-hidden group">
+                    <img class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                        data-alt="Abstract neural network visualization with blue light trails on a dark obsidian background"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCyO9teqKuF8j-eR_UYFk0OWqe4U6IYj1PwgCj0Gn6q33pco0zLx_I7GqkJIdWR5QB4x-8P1D_WUT6NAICTHAlPV8BYwObmvvG0gpPAJ6CqBTt3zu4MnuigtiDL2N1bMkODQkBU_6GKoMwGYSM4t6WTsfuBjiZnBbktreJv8CZDrW_c9sGddHwaoqXRdMt-s5IQFqAtEsudmQk5nN9B9buo68bXiRYy2iCG-lz8h04r5GNA8gzKcm0iYYwaXMHZNjj0NeDctJpjdA" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+                    <div
+                        class="absolute bottom-8 left-8 right-8 p-6 glass-panel bg-white/5 rounded-xl border border-white/10">
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <p class="text-xs font-label text-primary uppercase tracking-widest mb-1">Current Focus
                                 </p>
-<div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 w-full">
-<img class="w-full h-full h-auto" data-alt="Detailed diagram of the Lifestyle Ecosystem showing Business Targets, Corporate Menu, Connected services with AI and Payment Gateway, Personal Menu, and Customer Targets." src="https://lh3.googleusercontent.com/aida/ADBb0uhyPlYq-29wYhcsgHAPwahJun1pmqjbQuSbJO6Anpz-2TTRk3qgOoOHeRAnJ1grbKEqV4mW0rFAxRnRMAIP80NCKzy-wa4D4V_TDou8RS7sRUdw4txSgDEa6CNiQlUVat1bLWWaP6mg7n_19sA0lgH5YQwY5jSy8zxQFdm7riYYFCQ5gkh8RDVxYnS3dXEN-biCSQhwsHGdgfvJK8oeY70fYbWsP04goN8UxdgqUDjgnYNVH7BTpSID9lM6LHv67AozY19xlhGZLA"/>
-</div><div class="mb-8">
-<h4 class="text-2xl font-headline font-bold text-on-surface mb-4">Mobile Application Example</h4>
-<p class="text-on-surface-variant font-body leading-relaxed max-w-4xl">
-    This Application (All Design, Full stack technology use supabase/postgres for database, Better Auth for authentication and authorization frameworks) Install in VPS server. This Application use 90% AI model for development and only worked for about 2 months. For demo in web application can access in <a class="text-primary-container hover:underline" href="https://www.alphasistemtech.com" target="_blank">https://www.alphasistemtech.com</a>
-</p>
-</div><div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 w-full mt-12">
-<img class="w-full h-auto object-cover" data-alt="Mobile application interface showcase for Lifestyle Pay ecosystem including nutrition tracking, floor plans, and donation hub." src="https://lh3.googleusercontent.com/aida/ADBb0uhFmfEAWv3RKPeLSFd18wIKI8Q1bZ8Ltly5FlisbgPu-7ylBNCW6JUlBwRnFeZppmjxlNgnDoewYdQYtZ7G8XkT-xBf7VD53QryTrAB3RHag9jh1ew2hJ7qiMHi0_0CoWoeFvdGeJqnVuQxuDFn_okZuxZNCIUMNE-Ag82Unku1Ye9gktkr2gfDh1CJf9JBgj1QjrdNrZ7C_CqKBofg0war21qd4WzZW30yRw3X05RcPdYvf1WiWvxnHSzlwdZK3puFI1VO_f9mbA"/>
-</div>
-</div>
-</div>
-</div>
-<!-- Section: Workflow Automation -->
-<div class="bg-surface-container-low rounded-3xl p-12 border border-outline-variant/10 mt-24">
-<div class="flex flex-col lg:flex-row gap-12 items-center">
-<div class="lg:w-1/2">
-<h3 class="text-3xl font-headline font-bold mb-6">Workflow Automation</h3>
-<p class="text-on-surface-variant mb-8 leading-relaxed">
-                                    Leveraging N8N and WAHA (WhatsApp HTTP API) to create intelligent, responsive AI Agents that automate customer service and data entry tasks.    
-                                </p><div class="my-8 bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 w-full group">
-<img class="w-full h-auto object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" data-alt="Complex workflow automation and node-based process orchestration diagram showing the backbone of the Monolith Suite." src="https://lh3.googleusercontent.com/aida/ADBb0uilEzUz79Y8twWestZ4W8i-D-jTHKjDn_HcNcnJMR6UC-soLoPSDRslh-0j136S4GA-Y6M-hbWIdX5BR_fPP4hKN-Qbk3YEcHOTkXrSDQtwQyiZ6S4LnW_8cG2JK-ILP_cwmF6GnXbPL_hrmm4guAOxVP-NyVmyt6bIQGePpVz_ySHH0UrW_x3RoNpG2RaFGehmKJyqjfD_KSxmnLhlMX1p46cWOUYQv_EMl-YJM-xk67lYadWGrziCPY4tW0sjQ2V4T3fxjVNtyA"/>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div class="p-4 bg-surface-container rounded-lg border border-white/5">
-<p class="text-primary font-headline font-bold">90%</p>
-<p class="text-[10px] text-outline uppercase font-label">Time Saved</p>
-</div>
-<div class="p-4 bg-surface-container rounded-lg border border-white/5">
-<p class="text-primary font-headline font-bold">0 Errors</p>
-<p class="text-[10px] text-outline uppercase font-label">In Deployment</p>
-</div>
-</div>
-</div>
-<div class="lg:w-1/2 grid grid-cols-2 gap-4">
-<div class="h-32 bg-surface-container rounded-xl flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all">
-<img class="max-h-full opacity-50" data-alt="Technical logo placeholder for data visualization tool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHeRfdDJxSwoKbiQShDsCv6R4qPb4ITA5ayzHYjtg__-61NUfV4x5qBA1H1Ho3tL9Q014INyyOK7seb8RddOYv3T3j4P629KjO0u4OnDthTgfQz2sKBmWvffuALz8MyTaNotPIHWNq6El5GowFejKRKb-Ejwd5w94oUXz_k0Q7v-zkhrxB02QtSxNAhlo2L4SARGqhntRsNCZVjlwykzgNuP9oLDihEqa1UjXaRYgVTCEd2YaG2pzDd3ihZovSFxrqmxE9DBocWqk"/>
-</div>
-<div class="h-32 bg-surface-container rounded-xl flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all">
-<img class="max-h-full opacity-50" data-alt="Technical logo placeholder for cloud computing platform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4-g-PVKdI-6SjwW-lK-B2knnjIM80tkKDgde7Ib1njy6_m4H52ypVRPn7yhUK1F5BCqJK2uDiRpbvbsQOhRQgf9jGc2As8wgeaqXRY7tFMVZZSxonp1UUCpajYVFN_WrPSU6KN6SxcK_jmWgdN64bmas6VFUalxKR4ytzHWvPeD8vkWjiakSfHp1WPwC_XVNy7UjHJbSqGZdhccf0TOFklRaOHMFNN4WLU35NY3JHBRrsOCHSbjPlnprrIq2RrxCugfwWV7L1qEA"/>
-</div>
-<div class="h-32 bg-surface-container rounded-xl flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all">
-<img class="max-h-full opacity-50" data-alt="Technical logo placeholder for coding framework" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsb_U-gFfBG8aLXJzijFC1WbQpmVHQ6Dp9SwHbJ7CqPMSLRVlI4JptAqtyHbSuiGl9dTYylHhcEbVFUGaHC-OSgbyOz6UnXm7iKbBX-Jp8vWnmcl2pFbW1oncjy0skZFchoofV3EGeKk29nOYM3JLpdPlYrjMzBfmDF21ubfCCG5S91OZwOeI88KqNqNznZaqZwTi2ySc8Kpy0m1YZvdVZDH3nBG5kiVx3lRFcSKk6oqmg_fejoBa7ho4_LsB_z6IX-BesLaDl0hk"/>
-</div>
-<div class="h-32 bg-surface-container rounded-xl flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all">
-<img class="max-h-full opacity-50" data-alt="Technical logo placeholder for database system" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL1RAnfkYaOOD8tjrmRheLHVrZz2eqCESqFf0cQ8yBGEBvoB_XePxvpqS_9smUD4lIhYf4P1itPMGA9KoRf2IBdH4x8SKrMkRW3TOYdEANdWDYCAzQynYLvyAMm8Od1IpmbCdmcwYVHEuiD_QawvggGLDxMaAhAhpxJlzhZikypscRsVQGB0P3WIca5qtQbzcsR10M1sQV3KXDt8DtT_-jKuCSU4s4C1ZshVYd_UpUstgHdmB3HA-rVZSGk5pD8rpeL4FzZHuEz_Y"/>
-</div>
-</div>
-</div>
-</div>
-<!-- Skill Highlights Section -->
-<section class="py-24 max-w-[1440px] mx-auto px-8">
-<h2 class="font-headline text-5xl font-bold tracking-tighter mb-16 text-on-surface">Skill Highlights</h2>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-<div class="space-y-8">
-<div class="space-y-3">
-<div class="flex justify-between items-end">
-<span class="font-headline font-bold text-on-surface">Business Development And Management</span>
-<span class="text-primary font-label text-xs">88% STRATEGIC</span>
-</div>
-<div class="h-1 bg-surface-container rounded-full overflow-hidden">
-<div class="h-full bg-primary-container" style="width: 88%"></div>
-</div>
-</div>
-<div class="space-y-3">
-<div class="flex justify-between items-end">
-<span class="font-headline font-bold text-on-surface">Data Engineering &amp; Analytics</span>
-<span class="text-primary font-label text-xs">95% MASTERY</span>
-</div>
-<div class="h-1 bg-surface-container rounded-full overflow-hidden">
-<div class="h-full bg-primary-container" style="width: 95%"></div>
-</div>
-</div>
-<div class="space-y-3">
-<div class="flex justify-between items-end">
-<span class="font-headline font-bold text-on-surface">IT Development Application</span>
-<span class="text-primary font-label text-xs">92% OPERATIONAL</span>
-</div>
-<div class="h-1 bg-surface-container rounded-full overflow-hidden">
-<div class="h-full bg-primary-container" style="width: 92%"></div>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<div class="p-6 bg-surface-container rounded-xl border border-white/5 flex items-start gap-4">
-<span class="material-symbols-outlined text-primary-container">psychology</span>
-<p class="text-sm font-medium leading-tight">Excellent problem solving skills</p>
-</div>
-<div class="p-6 bg-surface-container rounded-xl border border-white/5 flex items-start gap-4">
-<span class="material-symbols-outlined text-primary-container">database</span>
-<p class="text-sm font-medium leading-tight">Database relational programming (ETL/ELT) and design skills</p>
-</div>
-<div class="col-span-full mt-4 p-8 bg-surface-container-low rounded-2xl border border-primary-container/20">
-<p class="text-[10px] font-label text-primary uppercase tracking-widest mb-4">Academic Foundation</p>
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-<div>
-<h4 class="text-xl font-headline font-bold text-on-surface">POLITEKNIK ITB</h4>
-<p class="text-sm text-on-surface-variant">Information Technology</p>
-</div>
-<div class="text-right md:text-right">
-<p class="text-sm font-bold text-primary-container">1997 — 1999</p>
-<p class="text-xs text-outline-variant uppercase">Bandung, Indonesia</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Technology Experience Section -->
-<section class="py-24 bg-surface-dim border-y border-white/5">
-<div class="max-w-[1440px] mx-auto px-8">
-<h2 class="font-headline text-5xl font-bold tracking-tighter mb-16 text-on-surface">Technology Experience</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-<div class="p-6 bg-surface-container rounded-2xl border border-white/5 group hover:border-primary-container/40 transition-colors">
-<div class="w-10 h-10 mb-4 rounded-lg bg-primary-container/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-primary-container">code</span>
-</div>
-<p class="text-[10px] font-label text-outline-variant uppercase tracking-widest mb-2">Languages</p>
-<h3 class="font-headline font-bold text-on-surface">Delphi, PHP, Java, .NET C#</h3>
-</div>
-<div class="p-6 bg-surface-container rounded-2xl border border-white/5 group hover:border-primary-container/40 transition-colors">
-<div class="w-10 h-10 mb-4 rounded-lg bg-primary-container/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-primary-container">storage</span>
-</div>
-<p class="text-[10px] font-label text-outline-variant uppercase tracking-widest mb-2">Database Systems</p>
-<h3 class="font-headline font-bold text-on-surface">SQL Server, Oracle, MySQL, Postgresql, MongoDB</h3>
-</div>
-<div class="p-6 bg-surface-container rounded-2xl border border-white/5 group hover:border-primary-container/40 transition-colors">
-<div class="w-10 h-10 mb-4 rounded-lg bg-primary-container/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-primary-container">settings_input_component</span>
-</div>
-<p class="text-[10px] font-label text-outline-variant uppercase tracking-widest mb-2">ETL Frameworks</p>
-<h3 class="font-headline font-bold text-on-surface">Pentaho, Kafka Confluent</h3>
-</div>
-<div class="p-6 bg-surface-container rounded-2xl border border-white/5 group hover:border-primary-container/40 transition-colors">
-<div class="w-10 h-10 mb-4 rounded-lg bg-primary-container/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-primary-container">monitoring</span>
-</div>
-<p class="text-[10px] font-label text-outline-variant uppercase tracking-widest mb-2">Analytics Tools</p>
-<h3 class="font-headline font-bold text-on-surface">Tableau</h3>
-</div>
-<div class="p-6 bg-surface-container rounded-2xl border border-white/5 group hover:border-primary-container/40 transition-colors">
-<div class="w-10 h-10 mb-4 rounded-lg bg-primary-container/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-primary-container">dynamic_feed</span>
-</div>
-<p class="text-[10px] font-label text-outline-variant uppercase tracking-widest mb-2">Event Streaming</p>
-<h3 class="font-headline font-bold text-on-surface">Ksql</h3>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-[#111417] full-width py-12 border-t border-white/5 font-['Inter'] text-xs tracking-widest uppercase">
-<div class="w-full px-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-<div class="text-slate-100 font-black">© 2024 THE DATA MONOLITH. ALL RIGHTS RESERVED.</div>
-<div class="flex gap-8">
-<a class="text-slate-600 hover:text-blue-400 transition-colors duration-300" href="#">Manifesto</a>
-<a class="text-slate-600 hover:text-blue-400 transition-colors duration-300" href="#">Source Code</a>
-<a class="text-slate-600 hover:text-blue-400 transition-colors duration-300" href="#">Technical Briefs</a>
-<a class="text-slate-600 hover:text-blue-400 transition-colors duration-300" href="#">Privacy</a>
-</div>
-</div>
-</footer>
-</body></html>
+                                <p class="text-lg font-headline font-medium">The role of Ai in all aspects of lifestyle,
+                                    daily activities and connected to digital payments</p>
+                            </div>
+                            <span class="text-3xl font-headline font-black text-white/20">01</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Detailed Professional Experience (Primary Experience Showcase) -->
+        <section class="py-24 bg-surface-dim border-y border-white/5" id="detailed-experience">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="mb-20">
+                    <h2 class="font-headline text-5xl font-bold tracking-tighter mb-4 text-on-surface">Professional
+                        Dossier</h2>
+                    <p class="text-on-surface-variant font-body text-lg">Granular breakdown of strategic mandates and
+                        technical execution.</p>
+                </div>
+                <div class="space-y-12">
+                    <!-- Alpha System Technology -->
+                    <div
+                        class="group relative grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 bg-surface-container rounded-2xl border border-outline-variant/10 hover:border-primary-container/30 transition-all">
+                        <div class="lg:col-span-3">
+                            <p class="text-primary font-label text-xs uppercase tracking-widest mb-2">2024 — PRESENT</p>
+                            <h3 class="text-2xl font-headline font-bold text-on-surface">Alpha System Technology</h3>
+                            <p class="text-sm text-outline-variant font-medium mt-2">Principal Consultant</p>
+                        </div>
+                        <div class="lg:col-span-9">
+                            <h4 class="text-xl font-headline font-bold text-primary-container mb-4">Project Management
+                                &amp; AI Implementation</h4>
+                            <ul class="space-y-3">
+                                <li class="flex gap-4 items-start">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
+                                    <p class="text-on-surface-variant text-sm leading-relaxed">Directed project
+                                        management for next-generation Digital Payment in Lifestyle Ecosystem with
+                                        integrated AI capabilities.</p>
+                                </li>
+                                <li class="flex gap-4 items-start">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
+                                    <p class="text-on-surface-variant text-sm leading-relaxed">Architected WhatsApp
+                                        (WAHA) workflows utilizing N8N for complex business process automation.</p>
+                                </li>
+                                <li class="flex gap-4 items-start">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
+                                    <p class="text-on-surface-variant text-sm leading-relaxed">Developed full-stack
+                                        mobile applications using Node.js, Google AI Antigrafity, and Supabase.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- PT Mitra Transaksi Indonesia -->
+                    <div
+                        class="group relative grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 bg-surface-container rounded-2xl border border-outline-variant/10 hover:border-primary-container/30 transition-all">
+                        <div class="lg:col-span-3">
+                            <p class="text-primary font-label text-xs uppercase tracking-widest mb-2">2021 — 2024</p>
+                            <h3 class="text-2xl font-headline font-bold text-on-surface">PT Mitra Transaksi Indonesia
+                            </h3>
+                            <p class="text-sm text-outline-variant font-medium mt-2">Dept. Head Data Management</p>
+                        </div>
+                        <div class="lg:col-span-9">
+                            <h4 class="text-xl font-headline font-bold text-primary-container mb-4">Data Infrastructure
+                                &amp; Innovation</h4>
+                            <ul class="space-y-3">
+                                <li class="flex gap-4 items-start">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
+                                    <p class="text-on-surface-variant text-sm leading-relaxed">Engineered
+                                        high-performance Data Warehouse (DWH) with ETL/ELT models for near real-time
+                                        processing.</p>
+                                </li>
+                                <li class="flex gap-4 items-start">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
+                                    <p class="text-on-surface-variant text-sm leading-relaxed">Spearheaded the design of
+                                        scalable data infrastructure to accelerate analytical throughput and reporting
+                                        accuracy.</p>
+                                </li>
+                                <li class="flex gap-4 items-start">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
+                                    <p class="text-on-surface-variant text-sm leading-relaxed">Formulated strategic work
+                                        plans and budgets for department-wide policy implementation and performance
+                                        monitoring.</p>
+                                </li>
+                                <li class="flex gap-4 items-start">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
+                                    <p class="text-on-surface-variant text-sm leading-relaxed">Established operational
+                                        standards for complex business system handling and rigorous data archiving
+                                        protocols.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- PT Bank Mega tbk -->
+                    <div
+                        class="group relative grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 bg-surface-container rounded-2xl border border-outline-variant/10 hover:border-primary-container/30 transition-all">
+                        <div class="lg:col-span-3">
+                            <p class="text-primary font-label text-xs uppercase tracking-widest mb-2">2015 — 2021</p>
+                            <h3 class="text-2xl font-headline font-bold text-on-surface">PT Bank Mega tbk</h3>
+                            <p class="text-sm text-outline-variant font-medium mt-2">MIS Department Head</p>
+                        </div>
+                        <div class="lg:col-span-9">
+                            <h4 class="text-xl font-headline font-bold text-primary-container mb-4">Enterprise Data
+                                Governance &amp; Reporting</h4>
+                            <ul class="space-y-3">
+                                <li class="flex gap-4 items-start">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
+                                    <p class="text-on-surface-variant text-sm leading-relaxed">Orchestrated the smooth
+                                        operation of the MIS department, ensuring rigorous data governance and
+                                        regulatory compliance.</p>
+                                </li>
+                                <li class="flex gap-4 items-start">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
+                                    <p class="text-on-surface-variant text-sm leading-relaxed">Managed end-to-end Data
+                                        Warehouse operations for critical banking report generation (BI, OJK, and
+                                        Government).</p>
+                                </li>
+                                <li class="flex gap-4 items-start">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-sm mt-1">arrow_right_alt</span>
+                                    <p class="text-on-surface-variant text-sm leading-relaxed">Collaborated across
+                                        functional units to identify data requirements and implement foundational
+                                        collection processes.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Previous Experience Summary -->
+                    <div class="p-8 bg-surface-container-low rounded-2xl border border-white/5">
+                        <h4 class="font-headline font-bold text-on-surface mb-8">Earlier Strategic Mandates</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div>
+                                <p class="text-[10px] font-label text-primary uppercase tracking-widest mb-2">2010 —
+                                    2015</p>
+                                <h5 class="text-sm font-headline font-bold text-on-surface">IT &amp; OPS EDC Manager
+                                </h5>
+                                <p class="text-xs text-outline-variant mt-1">PT Bank Mega (Makassar)</p>
+                                <p class="text-xs text-on-surface-variant mt-3 leading-relaxed">Managed regional EDC
+                                    support, e-Money development for toll gates, and large-scale entertainment complex
+                                    integrations.</p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-label text-primary uppercase tracking-widest mb-2">2004 —
+                                    2010</p>
+                                <h5 class="text-sm font-headline font-bold text-on-surface">App Development Staff</h5>
+                                <p class="text-xs text-outline-variant mt-1">PT Bank Mega (Jakarta)</p>
+                                <p class="text-xs text-on-surface-variant mt-3 leading-relaxed">Focused on system
+                                    analysis, FSD reporting for project management, and SIT/UAT coordination.</p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-label text-primary uppercase tracking-widest mb-2">2002 —
+                                    2004</p>
+                                <h5 class="text-sm font-headline font-bold text-on-surface">Systems Analyst</h5>
+                                <p class="text-xs text-outline-variant mt-1">IT Consultant DMS</p>
+                                <p class="text-xs text-on-surface-variant mt-3 leading-relaxed">Authored BRDs and
+                                    business development strategies. Monitored complex process flow developments.</p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-label text-primary uppercase tracking-widest mb-2">2000 —
+                                    2001</p>
+                                <h5 class="text-sm font-headline font-bold text-on-surface">System Engineer</h5>
+                                <p class="text-xs text-outline-variant mt-1">IT Consultant DMS</p>
+                                <p class="text-xs text-on-surface-variant mt-3 leading-relaxed">Foundational application
+                                    development and SIT Application protocols.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 3: AI & Projects Showcase -->
+        <section class="py-24" id="projects">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                    <div class="max-w-2xl">
+                        <h2 class="font-headline text-5xl font-bold tracking-tighter mb-6 text-on-surface">Architectural
+                            Ventures</h2>
+                        <p class="text-on-surface-variant font-body text-lg">Case studies on technical precision and
+                            systemic evolution.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <button
+                            class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white/5 transition-all">
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </button>
+                        <button
+                            class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white/5 transition-all">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="space-y-32">
+                    <!-- Project 1: DWH Migration -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div>
+                            <div class="flex items-center gap-4 mb-6">
+                                <span
+                                    class="bg-primary-container/10 text-primary-container px-3 py-1 rounded text-xs font-label font-bold tracking-widest uppercase">Infrastructure</span>
+                                <span class="text-outline-variant text-xs font-label">Project: Alpha-Scale</span>
+                            </div>
+                            <h3 class="text-3xl font-headline font-bold mb-6">Data Warehouse Migration</h3>
+                            <p class="text-on-surface-variant mb-8 leading-relaxed">
+                                Transitioning from fragmented legacy silos to a unified, high-performance DWH.
+                                Implemented zero-downtime migration protocols for petabyte-scale financial data.
+                            </p>
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex gap-4">
+                                    <span class="material-symbols-outlined text-primary-container"
+                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    <span class="text-sm font-body">99.99% Data Integrity during transition</span>
+                                </li>
+                                <li class="flex gap-4">
+                                    <span class="material-symbols-outlined text-primary-container"
+                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    <span class="text-sm font-body">75% reduction in query latency</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="bg-surface-container-high rounded-2xl overflow-hidden border border-outline-variant/20 p-4">
+                            <img class="w-full h-auto rounded-xl"
+                                data-alt="Comprehensive technical architecture diagram showing source data, staging, processing with Kafka and Pentaho, and implementation across various platforms and tools like Tableau."
+                                src="https://lh3.googleusercontent.com/aida/ADBb0ujHvI49XZRdgAgRUHsvLu_Dn2Doh2btGk_OSBxJ6guJelpAjoIzzaunaWy-H1Fe-lP7S7VERQgO6fV4Z41LAVbfrUSYxiY4npj6AmNhduTClOcVIo_-LG6uaTNa7N4DO9vL3kK7kt8da-IockkEWv1OcJOi4fjyAdldtQh5_nU8Fehad0frp1TSMZU6_h_cu9_CQDPXjGcp2BWzBp3WGYdbFCfh-1rJMZbvxzK7MReoplFbQG_W3YbkvOe7zxHcJGMUdjxD394_" />
+                        </div>
+                    </div>
+                    <!-- Project 2: Nixguard AI -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div class="lg:order-2">
+                            <div class="flex items-center gap-4 mb-6">
+                                <span
+                                    class="bg-tertiary-container/10 text-tertiary-fixed-dim px-3 py-1 rounded text-xs font-label font-bold tracking-widest uppercase">Artificial
+                                    Intelligence</span>
+                                <span class="text-outline-variant text-xs font-label">Project: Nixguard</span>
+                            </div>
+                            <h3 class="text-3xl font-headline font-bold mb-6">Nixguard AI Agents</h3>
+                            <p class="text-on-surface-variant mb-8 leading-relaxed">
+                                Autonomous security agents leveraging LLMs to detect and mitigate zero-day
+                                vulnerabilities in real-time. The system orchestrates multiple specialized nodes for
+                                threat hunting.
+                            </p>
+                            <div class="p-6 bg-surface-container-lowest rounded-xl border border-white/5 font-label">
+                                <p class="text-xs text-primary mb-4 flex items-center gap-2"><span
+                                        class="w-2 h-2 rounded-full bg-primary"></span> Analysis Log</p>
+                                <div class="text-[11px] text-on-surface-variant space-y-2 opacity-80">
+                                    <p>&gt; [INFO] INITIALIZING NIXGUARD AGENT NODE_04</p>
+                                    <p>&gt; [WARN] ANOMALY DETECTED IN PORT 443 TRAFFIC</p>
+                                    <p>&gt; [INFO] AGENT DISPATCHING NEURAL FILTER... SUCCESS</p>
+                                    <p>&gt; [RESULT] THREAT NEUTRALIZED. ENTROPY SCORE: 0.002</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="lg:order-1 bg-surface-container-high rounded-2xl overflow-hidden border border-outline-variant/20 p-4">
+                            <img class="w-full h-auto rounded-xl opacity-90 hover:opacity-100 transition-opacity"
+                                data-alt="Detailed technical workflow diagram for Nixguard AI Agents showing node-to-node communication and automated triggers."
+                                src="https://lh3.googleusercontent.com/aida/ADBb0ugf6_s9xP31TRfujox8FRwMPjGB74SDk1PVMZriVmCxN8Cug7oENWq-BDvtEf2Ny3_nuiDNpIMqnZ-nEg40kJDl71Fz4_tS1elvrII9-RcjIsN41-V3H8LrZAigsttv643kEN8VVb9-98WZujTv5Kw9d7kHC3aAH518MNzXvo6c3T3pMqhZXij4r8zuGnkBA1zeCFg72sNVrRCW78E3KhcZ0jIqsUfcPhYuqEmMIMq9C3jPLwOpB94L-9ZxyOoeCkuJG_Au7A60Bw" />
+                            <div
+                                class="mt-6 p-6 bg-surface-container-lowest rounded-xl border border-white/5 font-label">
+                                <p class="text-xs text-primary mb-4 flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-[14px]">description</span> Result
+                                    Example
+                                </p>
+                                <div class="text-[11px] text-on-surface-variant space-y-4 opacity-80 leading-relaxed">
+                                    <p>The system has been analyzed for its reputation and security status. Here are the
+                                        key findings:</p>
+                                    <ul class="space-y-2">
+                                        <li><span class="text-primary-container font-bold">REPUTATION_STATUS:</span> The
+                                            domain is generally considered safe and trustworthy.</li>
+                                        <li><span class="text-primary-container font-bold">ANALYSIS_RESULTS:</span>
+                                            Multiple security engines, including Acronis, Abusix, ADMINUSLabs, and
+                                            others, categorize the domain as harmless or undetected, with no malicious
+                                            activity reported.</li>
+                                        <li><span class="text-primary-container font-bold">SSL_CERTIFICATE:</span> Valid
+                                            until December 22, 2026, issued by Thawte TLS RSA CA G1, indicating secure
+                                            communication.</li>
+                                        <li><span class="text-primary-container font-bold">DNS_RECORDS:</span>
+                                            Consistent with standard configurations, including multiple name servers and
+                                            verification records.</li>
+                                        <li><span class="text-primary-container font-bold">DOMAIN_REGISTRATION:</span>
+                                            Registered in 1998 (Name.com, Inc). Status: "clientTransferProhibited"
+                                            (standard active domain protocol).</li>
+                                        <li><span class="text-primary-container font-bold">ADDITIONAL_INFO:</span>
+                                            Malicious vote count: 0. Popularity ranks within normal architectural
+                                            ranges.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3: Digital Payment -->
+                    <div class="grid grid-cols-1 gap-16">
+                        <div class="space-y-12 mx-auto">
+                            <div>
+                                <div class="flex items-center gap-4 mb-6">
+                                    <span
+                                        class="bg-secondary-container/10 text-secondary-fixed-dim px-3 py-1 rounded text-xs font-label font-bold tracking-widest uppercase">Ecosystem</span>
+                                    <span class="text-outline-variant text-xs font-label">Project: Lifestyle Pay</span>
+                                </div>
+                                <h3 class="text-3xl font-headline font-bold mb-6">Digital Payment in Lifestyle Ecosystem
+                                </h3>
+                                <p class="text-on-surface-variant mb-8 leading-relaxed">
+                                    A holistic integration of fintech within everyday consumer touchpoints—from retail
+                                    to entertainment. This ecosystem drives high-velocity micro-transactions.
+                                </p>
+                                <div
+                                    class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 w-full">
+                                    <img class="w-full h-full h-auto"
+                                        data-alt="Detailed diagram of the Lifestyle Ecosystem showing Business Targets, Corporate Menu, Connected services with AI and Payment Gateway, Personal Menu, and Customer Targets."
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0uhyPlYq-29wYhcsgHAPwahJun1pmqjbQuSbJO6Anpz-2TTRk3qgOoOHeRAnJ1grbKEqV4mW0rFAxRnRMAIP80NCKzy-wa4D4V_TDou8RS7sRUdw4txSgDEa6CNiQlUVat1bLWWaP6mg7n_19sA0lgH5YQwY5jSy8zxQFdm7riYYFCQ5gkh8RDVxYnS3dXEN-biCSQhwsHGdgfvJK8oeY70fYbWsP04goN8UxdgqUDjgnYNVH7BTpSID9lM6LHv67AozY19xlhGZLA" />
+                                </div>
+                                <div class="mb-8">
+                                    <h4 class="text-2xl font-headline font-bold text-on-surface mb-4">Mobile Application
+                                        Example</h4>
+                                    <p class="text-on-surface-variant font-body leading-relaxed max-w-4xl">
+                                        This Application (All Design, Full stack technology use supabase/postgres for
+                                        database, Better Auth for authentication and authorization frameworks) Install
+                                        in VPS server. This Application use 90% AI model for development and only worked
+                                        for about 2 months. For demo in web application can access in <a
+                                            class="text-primary-container hover:underline"
+                                            href="https://www.alphasistemtech.com"
+                                            target="_blank">https://www.alphasistemtech.com</a>
+                                    </p>
+                                </div>
+                                <div
+                                    class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 w-full mt-12">
+                                    <img class="w-full h-auto object-cover"
+                                        data-alt="Mobile application interface showcase for Lifestyle Pay ecosystem including nutrition tracking, floor plans, and donation hub."
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0uhFmfEAWv3RKPeLSFd18wIKI8Q1bZ8Ltly5FlisbgPu-7ylBNCW6JUlBwRnFeZppmjxlNgnDoewYdQYtZ7G8XkT-xBf7VD53QryTrAB3RHag9jh1ew2hJ7qiMHi0_0CoWoeFvdGeJqnVuQxuDFn_okZuxZNCIUMNE-Ag82Unku1Ye9gktkr2gfDh1CJf9JBgj1QjrdNrZ7C_CqKBofg0war21qd4WzZW30yRw3X05RcPdYvf1WiWvxnHSzlwdZK3puFI1VO_f9mbA" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section: Workflow Automation -->
+                    <div class="bg-surface-container-low rounded-3xl p-12 border border-outline-variant/10 mt-24">
+                        <div class="flex flex-col lg:flex-row gap-12 items-center">
+                            <div class="lg:w-1/2">
+                                <h3 class="text-3xl font-headline font-bold mb-6">Workflow Automation</h3>
+                                <p class="text-on-surface-variant mb-8 leading-relaxed">
+                                    Leveraging N8N and WAHA (WhatsApp HTTP API) to create intelligent, responsive AI
+                                    Agents that automate customer service and data entry tasks.
+                                </p>
+                                <div
+                                    class="my-8 bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 w-full group">
+                                    <img class="w-full h-auto object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                                        data-alt="Complex workflow automation and node-based process orchestration diagram showing the backbone of the Monolith Suite."
+                                        src="https://lh3.googleusercontent.com/aida/ADBb0uilEzUz79Y8twWestZ4W8i-D-jTHKjDn_HcNcnJMR6UC-soLoPSDRslh-0j136S4GA-Y6M-hbWIdX5BR_fPP4hKN-Qbk3YEcHOTkXrSDQtwQyiZ6S4LnW_8cG2JK-ILP_cwmF6GnXbPL_hrmm4guAOxVP-NyVmyt6bIQGePpVz_ySHH0UrW_x3RoNpG2RaFGehmKJyqjfD_KSxmnLhlMX1p46cWOUYQv_EMl-YJM-xk67lYadWGrziCPY4tW0sjQ2V4T3fxjVNtyA" />
+                                </div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="p-4 bg-surface-container rounded-lg border border-white/5">
+                                        <p class="text-primary font-headline font-bold">90%</p>
+                                        <p class="text-[10px] text-outline uppercase font-label">Time Saved</p>
+                                    </div>
+                                    <div class="p-4 bg-surface-container rounded-lg border border-white/5">
+                                        <p class="text-primary font-headline font-bold">0 Errors</p>
+                                        <p class="text-[10px] text-outline uppercase font-label">In Deployment</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+                                <div
+                                    class="h-32 bg-surface-container rounded-xl flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all">
+                                    <img class="max-h-full opacity-50"
+                                        data-alt="Technical logo placeholder for data visualization tool"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHeRfdDJxSwoKbiQShDsCv6R4qPb4ITA5ayzHYjtg__-61NUfV4x5qBA1H1Ho3tL9Q014INyyOK7seb8RddOYv3T3j4P629KjO0u4OnDthTgfQz2sKBmWvffuALz8MyTaNotPIHWNq6El5GowFejKRKb-Ejwd5w94oUXz_k0Q7v-zkhrxB02QtSxNAhlo2L4SARGqhntRsNCZVjlwykzgNuP9oLDihEqa1UjXaRYgVTCEd2YaG2pzDd3ihZovSFxrqmxE9DBocWqk" />
+                                </div>
+                                <div
+                                    class="h-32 bg-surface-container rounded-xl flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all">
+                                    <img class="max-h-full opacity-50"
+                                        data-alt="Technical logo placeholder for cloud computing platform"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4-g-PVKdI-6SjwW-lK-B2knnjIM80tkKDgde7Ib1njy6_m4H52ypVRPn7yhUK1F5BCqJK2uDiRpbvbsQOhRQgf9jGc2As8wgeaqXRY7tFMVZZSxonp1UUCpajYVFN_WrPSU6KN6SxcK_jmWgdN64bmas6VFUalxKR4ytzHWvPeD8vkWjiakSfHp1WPwC_XVNy7UjHJbSqGZdhccf0TOFklRaOHMFNN4WLU35NY3JHBRrsOCHSbjPlnprrIq2RrxCugfwWV7L1qEA" />
+                                </div>
+                                <div
+                                    class="h-32 bg-surface-container rounded-xl flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all">
+                                    <img class="max-h-full opacity-50"
+                                        data-alt="Technical logo placeholder for coding framework"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsb_U-gFfBG8aLXJzijFC1WbQpmVHQ6Dp9SwHbJ7CqPMSLRVlI4JptAqtyHbSuiGl9dTYylHhcEbVFUGaHC-OSgbyOz6UnXm7iKbBX-Jp8vWnmcl2pFbW1oncjy0skZFchoofV3EGeKk29nOYM3JLpdPlYrjMzBfmDF21ubfCCG5S91OZwOeI88KqNqNznZaqZwTi2ySc8Kpy0m1YZvdVZDH3nBG5kiVx3lRFcSKk6oqmg_fejoBa7ho4_LsB_z6IX-BesLaDl0hk" />
+                                </div>
+                                <div
+                                    class="h-32 bg-surface-container rounded-xl flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all">
+                                    <img class="max-h-full opacity-50"
+                                        data-alt="Technical logo placeholder for database system"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL1RAnfkYaOOD8tjrmRheLHVrZz2eqCESqFf0cQ8yBGEBvoB_XePxvpqS_9smUD4lIhYf4P1itPMGA9KoRf2IBdH4x8SKrMkRW3TOYdEANdWDYCAzQynYLvyAMm8Od1IpmbCdmcwYVHEuiD_QawvggGLDxMaAhAhpxJlzhZikypscRsVQGB0P3WIca5qtQbzcsR10M1sQV3KXDt8DtT_-jKuCSU4s4C1ZshVYd_UpUstgHdmB3HA-rVZSGk5pD8rpeL4FzZHuEz_Y" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill Highlights Section -->
+                    <section class="py-24 max-w-[1440px] mx-auto px-8">
+                        <h2 class="font-headline text-5xl font-bold tracking-tighter mb-16 text-on-surface">Skill
+                            Highlights</h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                            <div class="space-y-8">
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-end">
+                                        <span class="font-headline font-bold text-on-surface">Business Development And
+                                            Management</span>
+                                        <span class="text-primary font-label text-xs">88% STRATEGIC</span>
+                                    </div>
+                                    <div class="h-1 bg-surface-container rounded-full overflow-hidden">
+                                        <div class="h-full bg-primary-container" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-end">
+                                        <span class="font-headline font-bold text-on-surface">Data Engineering &amp;
+                                            Analytics</span>
+                                        <span class="text-primary font-label text-xs">95% MASTERY</span>
+                                    </div>
+                                    <div class="h-1 bg-surface-container rounded-full overflow-hidden">
+                                        <div class="h-full bg-primary-container" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-end">
+                                        <span class="font-headline font-bold text-on-surface">IT Development
+                                            Application</span>
+                                        <span class="text-primary font-label text-xs">92% OPERATIONAL</span>
+                                    </div>
+                                    <div class="h-1 bg-surface-container rounded-full overflow-hidden">
+                                        <div class="h-full bg-primary-container" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div
+                                    class="p-6 bg-surface-container rounded-xl border border-white/5 flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary-container">psychology</span>
+                                    <p class="text-sm font-medium leading-tight">Excellent problem solving skills</p>
+                                </div>
+                                <div
+                                    class="p-6 bg-surface-container rounded-xl border border-white/5 flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary-container">database</span>
+                                    <p class="text-sm font-medium leading-tight">Database relational programming
+                                        (ETL/ELT) and design skills</p>
+                                </div>
+                                <div
+                                    class="col-span-full mt-4 p-8 bg-surface-container-low rounded-2xl border border-primary-container/20">
+                                    <p class="text-[10px] font-label text-primary uppercase tracking-widest mb-4">
+                                        Academic Foundation</p>
+                                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                                        <div>
+                                            <h4 class="text-xl font-headline font-bold text-on-surface">POLITEKNIK ITB
+                                            </h4>
+                                            <p class="text-sm text-on-surface-variant">Information Technology</p>
+                                        </div>
+                                        <div class="text-right md:text-right">
+                                            <p class="text-sm font-bold text-primary-container">1997 — 1999</p>
+                                            <p class="text-xs text-outline-variant uppercase">Bandung, Indonesia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Technology Experience Section -->
+                    <section class="py-24 bg-surface-dim border-y border-white/5">
+                        <div class="max-w-[1440px] mx-auto px-8">
+                            <h2 class="font-headline text-5xl font-bold tracking-tighter mb-16 text-on-surface">
+                                Technology Experience</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                                <div
+                                    class="p-6 bg-surface-container rounded-2xl border border-white/5 group hover:border-primary-container/40 transition-colors">
+                                    <div
+                                        class="w-10 h-10 mb-4 rounded-lg bg-primary-container/10 flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-primary-container">code</span>
+                                    </div>
+                                    <p
+                                        class="text-[10px] font-label text-outline-variant uppercase tracking-widest mb-2">
+                                        Languages</p>
+                                    <h3 class="font-headline font-bold text-on-surface">Delphi, PHP, Java, .NET C#</h3>
+                                </div>
+                                <div
+                                    class="p-6 bg-surface-container rounded-2xl border border-white/5 group hover:border-primary-container/40 transition-colors">
+                                    <div
+                                        class="w-10 h-10 mb-4 rounded-lg bg-primary-container/10 flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-primary-container">storage</span>
+                                    </div>
+                                    <p
+                                        class="text-[10px] font-label text-outline-variant uppercase tracking-widest mb-2">
+                                        Database Systems</p>
+                                    <h3 class="font-headline font-bold text-on-surface">SQL Server, Oracle, MySQL,
+                                        Postgresql, MongoDB</h3>
+                                </div>
+                                <div
+                                    class="p-6 bg-surface-container rounded-2xl border border-white/5 group hover:border-primary-container/40 transition-colors">
+                                    <div
+                                        class="w-10 h-10 mb-4 rounded-lg bg-primary-container/10 flex items-center justify-center">
+                                        <span
+                                            class="material-symbols-outlined text-primary-container">settings_input_component</span>
+                                    </div>
+                                    <p
+                                        class="text-[10px] font-label text-outline-variant uppercase tracking-widest mb-2">
+                                        ETL Frameworks</p>
+                                    <h3 class="font-headline font-bold text-on-surface">Pentaho, Kafka Confluent</h3>
+                                </div>
+                                <div
+                                    class="p-6 bg-surface-container rounded-2xl border border-white/5 group hover:border-primary-container/40 transition-colors">
+                                    <div
+                                        class="w-10 h-10 mb-4 rounded-lg bg-primary-container/10 flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-primary-container">monitoring</span>
+                                    </div>
+                                    <p
+                                        class="text-[10px] font-label text-outline-variant uppercase tracking-widest mb-2">
+                                        Analytics Tools</p>
+                                    <h3 class="font-headline font-bold text-on-surface">Tableau</h3>
+                                </div>
+                                <div
+                                    class="p-6 bg-surface-container rounded-2xl border border-white/5 group hover:border-primary-container/40 transition-colors">
+                                    <div
+                                        class="w-10 h-10 mb-4 rounded-lg bg-primary-container/10 flex items-center justify-center">
+                                        <span
+                                            class="material-symbols-outlined text-primary-container">dynamic_feed</span>
+                                    </div>
+                                    <p
+                                        class="text-[10px] font-label text-outline-variant uppercase tracking-widest mb-2">
+                                        Event Streaming</p>
+                                    <h3 class="font-headline font-bold text-on-surface">Ksql</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-[#111417] full-width py-12 border-t border-white/5 font-['Inter'] text-xs tracking-widest uppercase">
+        <div class="w-full px-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-slate-100 font-black">© 2024 THE DATA MONOLITH. ALL RIGHTS RESERVED.</div>
+            <div class="flex gap-8">
+                <a class="text-slate-600 hover:text-blue-400 transition-colors duration-300" href="#">Manifesto</a>
+                <a class="text-slate-600 hover:text-blue-400 transition-colors duration-300" href="#">Source Code</a>
+                <a class="text-slate-600 hover:text-blue-400 transition-colors duration-300" href="#">Technical
+                    Briefs</a>
+                <a class="text-slate-600 hover:text-blue-400 transition-colors duration-300" href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
